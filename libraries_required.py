@@ -1,17 +1,17 @@
 
 #Object Detection
-!pip install -U yolov5
+%pip install -U yolov5
 
 import yolov5
 
 #Speech Transcribe 
-!pip install -q omegaconf torchaudio pydub
+%pip install -q omegaconf torchaudio pydub
 
 import os
 from os.path import exists
 
 if not exists('silero-models'):
-  !git clone -q --depth 1 https://github.com/snakers4/silero-models
+  %git clone -q --depth 1 https://github.com/snakers4/silero-models
 
 %cd silero-models
 
