@@ -1,0 +1,2 @@
+The Data use is the coco-karpathy dataset.
+COCO is a large-scale object detection, segmentation, and captioning dataset.
