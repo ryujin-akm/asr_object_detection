@@ -1,10 +1,28 @@
+import os
+from os.path import exists
+# silero imports
+import torch
+import random
+from glob import glob
+from omegaconf import OmegaConf
+from src.silero.utils import (init_jit_model, 
+                       split_into_batches,
+                       read_audio,
+                       read_batch,
+                       prepare_model_input)
+from colab_utils import (record_audio,
+                         audio_bytes_to_np,
+                         upload_audio)
 
+# imports for uploading/recording
+import numpy as np
+import ipywidgets as widgets
+from scipy.io import wavfile
+from IPython.display import Audio, display, clear_output
+from torchaudio.functional import vad
 
 device = torch.device('cpu')   # you can use any pytorch device
 models = OmegaConf.load('models.yml')
-
-
-
 
 # wav to text method
 def wav_to_text(f='test.wav'):

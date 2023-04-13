@@ -1,4 +1,4 @@
-yolo5 == 7.0.11
+yolo5
 omegaconf 
 torchaudio 
 pydub
