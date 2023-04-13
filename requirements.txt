@@ -1,4 +1,4 @@
-yolo5
+yolov5
 omegaconf 
 torchaudio 
 pydub

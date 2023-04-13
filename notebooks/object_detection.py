@@ -1,4 +1,4 @@
-import yolo5
+import yolov5
 # 'fcakyon/yolov5s-v7.0'
 def object_detect(model_name = 'fcakyon/yolov5s-v7.0'):
     # load model
